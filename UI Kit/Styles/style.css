@@ -1,0 +1,444 @@
+
+
+
+body {background-color:#F2F2F2 ;}
+    .swiper {
+     width: 600px;
+     height: 300px;
+}
+
+
+
+
+
+
+    /* CONTAINER */
+    #input {
+      width: 552px;
+      height: 56px;
+      position: relative;
+      background: #FFFFFF;
+      border: 1px solid #EAEAF3;
+      box-sizing: border-box;
+      border-radius: 12px;
+      margin-bottom: 16px;
+      margin-left: 31px;
+      background-color: white;
+      border: none;
+      box-shadow: 0 0 0 1px #EAEAF3;
+      outline: none;
+      transition: .1s;
+      display: grid;
+      grid-template-columns: 56px 440px 56px;
+      grid-template-rows: 56px ;
+    }
+
+    #input-filled {
+      width: 552px;
+      height: 56px;
+      left: 31px;
+      top: 27px;
+      background: #FFFFFF;
+      box-sizing: border-box;
+      border-radius: 12px;
+      margin-bottom: 16px;
+      margin-left: 31px;
+      background-color: white;
+      border: none;
+      box-shadow: 0 0 0 1px #19B7BB;
+      outline: none;
+      transition: .1s;
+      display: grid;
+      grid-template-columns: 56px 440px 56px;
+      grid-template-rows: 56px ;
+    }
+
+
+    .grey-text {
+      display: flex;
+      align-items: center;
+      /* border: 1px solid #222; */
+      text-align: center;
+      font-family: arial, sans-serif;
+      font-weight: bold;
+      cursor: pointer;
+      font-family: Ubuntu;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 24px;
+      color: #BCBCC7;
+    }
+
+    .bold-text {
+      display: flex;
+      align-items: center;
+      /* border: 1px solid #222; */
+      text-align: center;
+      font-family: arial, sans-serif;
+      font-weight: bold;
+      cursor: pointer;
+      font-family: Ubuntu;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 24px;
+      color: black;
+    }
+
+    .picture {
+      padding: 16px;
+      display: flex;
+      padding-left: 16px;
+      align-items: center;
+
+
+    }
+
+
+
+
+ .button {
+   font-family: Ubuntu;
+   font-style: normal;
+   font-weight: 300;
+   font-size: 18px;
+   line-height: 24px;
+   padding-right: 32px;
+   padding-left: 32px;
+   display: flex;
+   align-items: center;
+   color: #FFFFFF;
+   margin-left: 31px;
+   width: 94px;
+   height: 56px;
+   background: linear-gradient(267.71deg, #1ACACE 0%, #19B7BB 100%);
+   border-radius: 12px;
+  }
+
+
+ .button:hover {
+   box-shadow: 0px 8px 16px rgba(25, 183, 187, 0.32);
+  }
+
+
+.button:active {
+  background: linear-gradient(267.71deg, #1ACACE 0%, #19B7BB 100%);
+  box-shadow: 0px 8px 16px rgba(25, 183, 187, 0.32), inset 0px 0px 16px rgba(0, 0, 0, 0.15);
+  border-radius: 12px;
+}
+
+.text-telegram {
+  background-color: white;
+  border: 1px solid #EAEAF3;
+  width: 264px;
+  height: 48px;
+  margin-top: 16px;
+  margin-left: 31px;
+  /* border: 1px solid #EAEAF3; */
+  box-sizing: border-box;
+  box-shadow: 0px 8px 16px rgba(116, 115, 115, 0.15);
+  border-radius: 12px;
+  display: grid;
+  grid-template-columns: 56px 208px;
+  grid-template-rows: 48px ;
+}
+
+.picture-telegram {
+  padding: 14px 16px 14px 24px;
+
+}
+
+.picture-circule {
+
+padding: 5px;
+
+}
+
+.picture-world {
+  padding-top: 2px;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+
+
+}
+
+.language {
+  margin-top: 16px;
+  margin-bottom: 10px;
+  margin-left: 31px;
+  width: 122px;
+  height: 40px;
+  background: #FFFFFF;
+  box-shadow: 0px 8px 16px rgba(116, 115, 115, 0.15);
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: 38px 38px 24px;
+  grid-template-rows: 40px ;
+  border:0px;
+}
+
+
+
+
+
+.little-text {
+  display: flex;
+  align-items: center;
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 24px;
+
+}
+
+ .change-lng {
+   width: 122px;
+   height: 104px;
+   margin-left: 31px;
+   background: #FFFFFF;
+   box-shadow: 0px 8px 16px rgba(116, 115, 115, 0.15);
+   border-radius: 20px;
+ }
+
+ .change-lng h4 {
+   color: black;
+   padding: 12px 16px;
+   text-decoration: none;
+   display: block;
+ }
+
+ h4 {
+   font-family: Ubuntu;
+   font-style: normal;
+   font-weight: 300;
+   font-size: 14px;
+   line-height: 24px;
+ }
+
+
+ .change-lng .top {
+  padding-top: 0px;
+   margin:0px;
+   color: black;
+   padding-left: 16px;
+   padding-bottom: 8px;
+   text-decoration: none;
+   display: block;
+ }
+
+
+ .change-lng .middle {
+   margin: 0px;
+   color: black;
+   padding-top: 0px;
+   padding-left: 16px;
+   padding-bottom: 8px;
+   text-decoration: none;
+   display: block;
+ }
+
+
+
+.change-lng .bottom {
+   margin: 0px;
+   color: black;
+   padding: 0px 16px;
+   text-decoration: none;
+   display: block;
+ }
+
+
+
+
+.color1 {
+  margin: 15px;
+  border-radius: 50px;
+  width: 80px;
+  height: 80px;
+  background: #19B7BB;
+}
+
+.color2 {
+  margin: 15px;
+  border-radius: 50px;
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(267.71deg, #1ACACE 0%, #19B7BB 100%);
+
+}
+
+.color3 {
+  margin: 15px;
+  border-radius: 50px;
+  width: 80px;
+  height: 80px;
+  background: #BCBCC7;
+
+}
+.color4 {
+  margin: 15px;
+  border-radius: 50px;
+  width: 80px;
+  height: 80px;
+  background: #EAEAF3;
+
+}
+.color5 {
+  margin: 15px;
+  border-radius: 50px;
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(180deg, #F7D479 0%, #EBBD46 100%);;
+
+}
+.color6 {
+  margin: 15px;
+  border-radius: 50px;
+  width: 80px;
+  height: 80px;
+  background: #252729;
+
+}
+
+h1{font-family: Ubuntu;
+font-style: normal;
+font-weight: 300;
+font-size: 64px;
+}
+
+h2{font-family: Ubuntu;
+font-style: normal;
+font-weight: 300;
+font-size: 48px;
+}
+
+h3{font-family: Ubuntu;
+font-style: normal;
+font-weight: 300;
+font-size: 36px;
+}
+
+h4{font-style: Ubuntu;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 32px;}
+h5{font-family: Ubuntu;
+font-style: normal;
+font-weight: 300;
+font-size: 24px;
+}
+
+h6{font-family: Ubuntu;
+font-style: normal;
+font-weight: 300;
+font-size: 18px;
+}
+
+
+
+
+a {
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+    /* Кнопка выпада */
+    .dropbtn {
+      background-color: #3498DB;
+      color: white;
+      padding: 16px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+    }
+
+
+/* Контейнер <div> - нужен для позиционирования контен */
+#dropdown {
+  display: inline-block;
+
+}
+
+/* Выпадающее меню (скрыто по началу) */
+#dropdown-content {
+
+  margin: 16px 0px 16px 31px;
+  width: 552px;
+  height: 177,5px;
+  background: #FFFFFF;
+  border: 1px solid #EAEAF3;
+  box-sizing: border-box;
+  border-radius: 12px;
+  filter: drop-shadow(-8px 8px 40px rgba(0, 0, 0, 0.1));
+}
+
+/* Ссылки внутри меню */
+#dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Изменяет цвет текаста при наведении */
+#dropdown-content .top:hover {
+  border-radius: 9px 9px 0px 0px;
+  background-color: #EAEAF3;
+  color: #19B7BB;}
+
+  #dropdown-content .middle:hover {
+    background-color: #EAEAF3;
+    color: #19B7BB;}
+
+    #dropdown-content .bottom:hover {
+      border-radius: 0px 0px 9px 9px;
+      background-color: #EAEAF3;
+      color: #19B7BB;}
+
+
+/* Показывает выпадающее меню при наведении */
+
+#dropdown:hover #dropdown-content {
+  border-radius: 12px;
+  display: block;
+}
+
+
+/* Изменяет цвет бэкграудна  при наведении */
+#dropdown:hover .dropbtn {background-color: #3e8e41;
+}
+
+
+#dropdown-content .top {
+  border-bottom: 1px solid #EAEAF3;
+  color: black;
+  padding: 8px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+
+#dropdown-content .middle {
+  border-bottom: 1px solid #EAEAF3;
+  color: black;
+  padding: 8px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+
+
+#dropdown-content .bottom {
+  color: black;
+  padding: 8px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+
+}
