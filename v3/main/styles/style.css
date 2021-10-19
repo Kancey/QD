@@ -261,7 +261,7 @@ color: #26323E;
              display: block;
              transition: 0.3s;
            }
-           
+
            .burger span::before{
              transform: translateY(5px);
            }
@@ -271,10 +271,10 @@ color: #26323E;
              transform: translateY(-5px);
            }
 
- 
 
 
-           .burger.active span{height: 0;} 
+
+           .burger.active span{height: 0;}
            .burger.active span::before{
              transform: rotate(-45deg);
            }
@@ -283,6 +283,75 @@ color: #26323E;
 
              transform: rotate(45deg);
            }
+
+
+
+
+
+
+
+
+           .burger-m{
+             cursor: pointer;
+             top:5px;
+             width: 28px;
+             height: 28px;
+             background-color: #1ACACE;
+             border-radius: 50%;
+             display: none;
+             position: relative;
+           }
+
+           .burger-m span,
+           .burger-m span::before,
+           .burger-m span::after{
+            position: absolute;
+            top: 50%; margin-top: -1px;
+            left: 50%; margin-left: -10px;
+            width: 20px;
+            height: 2px;
+            background-color: white;
+           }
+
+           .burger-m span::before,
+           .burger-m span::after{
+             content: '';
+             display: block;
+             transition: 0.3s;
+           }
+
+           .burger-m span::before{
+             transform: translateY(5px);
+           }
+
+           .burger-m span::after{
+
+             transform: translateY(-5px);
+           }
+
+
+
+
+           .burger-m.active span{height: 0;}
+           .burger-m.active span::before{
+             transform: rotate(-45deg);
+           }
+
+           .burger-m.active span::after{
+
+             transform: rotate(45deg);
+           }
+
+
+
+
+
+
+
+
+
+
+
 
 
 .boton{
@@ -491,7 +560,7 @@ box-shadow: 0px 8px 16px rgba(116, 115, 115, 0.25);
   width: calc(100% - 60px);
   top: 30px;
   height: 50px;
-  scale: 0%;
+  opacity: 0%;
   align-items: center;
   padding: 20px 0px;
   position: absolute;
@@ -506,7 +575,7 @@ box-shadow: 0px 8px 16px rgba(116, 115, 115, 0.25);
 
 
 .menu-hidden.active {
-scale: 100%;
+opacity: 100%;
 }
 
 
@@ -567,14 +636,13 @@ scale: 100%;
     font-size: 15px;
   }
   .ppltalk{
-    
+
     height: 200px;
   }
 }
 
 @media (max-width: 880px){
   .menu-hidden{ display: none;}
-
   .call-us23{display: flex;}
   .language {display: none;}
   .blue-button, .white-button{   padding: 16px 8px;  }
@@ -583,12 +651,13 @@ scale: 100%;
   .middle h1 {font-size: 24px; line-height: 32px;}
   .middle-text {font-size: 14px; line-height:20px;}
   .footer{  height: 430px;  }
-  .burger{width:28px; height: 28px; top: 5px;}
+  .burger-m {display: block;}
+  .burger{display: none;}
   .circle1, .circle2, .circle3{display: none;}
   .upper .asd{ margin-left: 20px; padding-top: 12px; height: 15px; width: 128px;}
    body {margin: 30px;}
-   .upper{padding:20px; }
-   .boton{  margin-top: 15px; height: auto; }
+  .upper{padding:20px; }
+  .boton{  margin-top: 15px; height: auto; }
 }
 
 @media(max-width: 750px){
@@ -600,8 +669,3 @@ scale: 100%;
 .boton{  margin-top: 0px; }
 
 }
-
-
-
-
-
