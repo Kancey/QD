@@ -14,6 +14,7 @@ body {
   background-size: 100%;
   background-attachment: fixed;
   background-repeat:repeat-y;
+  background-color:rgba(0,0,0,.3);
   background-image: url('../images/background.png');
 }
 
@@ -585,22 +586,20 @@ box-shadow: 0px 8px 16px rgba(116, 115, 115, 0.25);
 
 
 .menu-m{
-
   position: absolute;
   overflow: hidden;
-display: none;
-padding: 30px;
-z-index: 1000;
-align-items: center;
-justify-content: center;
-left: 0;
-width: calc(100% - 60px);
-height: 500px;
-top: 40%;
-
-background: rgba(255, 255, 255, 0.95);
-box-shadow: 0px -12px 24px rgba(126, 120, 120, 0.25);
-border-radius: 24px 24px 0px 0px;
+  display: none;
+  padding: 0px;
+  z-index: 1000;
+  align-items: center;
+  justify-content: center;
+  left: 0;
+  width: calc(100% - 0px);
+  height: 500px;
+  top: 55%;
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0px -12px 24px rgba(126, 120, 120, 0.25);
+  border-radius: 24px 24px 0px 0px;
 }
 
 .menu-m img{
@@ -621,7 +620,7 @@ border-radius: 4px;
 }
 
 .down-thing{
-  width: 400px;
+  width: 340px;
   height: 1px;
   background: #19B7BB;
   border-radius: 4px;
@@ -629,21 +628,18 @@ border-radius: 4px;
 
 
 .down-line{
-
   align-items: center;
-border: 1px solid black;
-display: flex;
-
+  border: 1px solid black;
+  display: flex;
  }
 
 
  .languagem{
+
    background-color: black;
-   position: absolute;
    width: 122px;
    height: 40px;
    border:1px solid black;
-
  }
 
 
@@ -664,6 +660,7 @@ display: flex;
    display: none;
  }
 }
+
 @media (max-width: 1806px)  {
   .kek-li1 {margin-left: 4%;}
   .middle {  margin: 60px 50px;  }
@@ -704,6 +701,7 @@ display: flex;
 }
 
 @media (max-width: 880px){
+
   .menu-m{display:grid;}
   .menu-hidden{ display: none;}
   .call-us23{display: flex;}
@@ -718,7 +716,7 @@ display: flex;
   .burger{display: none;}
   .circle1, .circle2, .circle3{display: none;}
   .upper .asd{ margin-left: 20px; padding-top: 12px; height: 15px; width: 128px;}
-   body {margin: 30px;}
+   body {margin: 5px; }
   .upper{padding:20px; }
   .boton{  margin-top: 15px; height: auto; }
 }
@@ -730,5 +728,11 @@ display: flex;
 .white-button { display: flex; margin-left: 0; font-size: 17px; width: 153px; padding: 8px 16px;}
 .middle {margin: 10px 40px;   width: auto;   justify-content: center; align-items: center; }
 .boton{  margin-top: 0px; }
+
+}
+
+@media(max-width: 450px){
+
+
 
 }
