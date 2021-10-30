@@ -1,7 +1,6 @@
 
 
 body {
-
   font-family: ubuntu;
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -17,8 +16,12 @@ body {
   background-repeat:repeat-y;
   background-color:white;
   background-image: url('../images/background.png');
+
 }
 
+body.lock{
+  overflow: hidden;
+}
 
 .swiper {
   width: 600px;
@@ -132,6 +135,8 @@ font-size: 18px;
 line-height: 24px;
 color: #26323E;
 }
+
+
 
 
 
@@ -608,7 +613,7 @@ box-shadow: 0px 8px 16px rgba(116, 115, 115, 0.25);
 }
 
 .menu-m{
- scale: 0;
+  scale: 0;
   transition: 0.6s;
   position: absolute;
   overflow: hidden;
@@ -621,6 +626,9 @@ box-shadow: 0px 8px 16px rgba(116, 115, 115, 0.25);
   width: calc(100% - 0px);
   height: 500px;
   top: 180%;
+  -moz-backdrop-filter: blur(150px);
+  -webkit-backdrop-filter: blur(150px);
+          backdrop-filter: blur(150px);
   background: rgba(255, 255, 255, 0.95);
   box-shadow: 0px -12px 24px rgba(126, 120, 120, 0.25);
   border-radius: 24px 24px 0px 0px;
@@ -786,26 +794,199 @@ border-radius: 4px;
 
 .language-show{
   position: absolute;
+}
 
+
+/*-----------------------------*/
+/*  Это страница с контактами  */
+/*-----------------------------*/
+
+
+.textus{
+ font-weight: 800;
+ font-size: 60px;
+ max-width: 1800px;
+ height: auto;
+ display: block;
+ margin: 30px auto;
 }
 
 
 
+.call-us{
+  margin: 30px auto;
+  grid-gap: 24px;
+  display: grid;
+  max-width: 1800px;
+  height:636px;
+}
+
+.call-up{
+
+  display: flex;
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 24px;
+  padding: 32px;
+  max-width: 1100px;
+  height: 300px;
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: 0px 0px 24px rgba(126, 120, 120, 0.1);
+  -webkit-backdrop-filter: blur(150px);
+          backdrop-filter: blur(150px);
+  border-radius: 24px;
+}
+
+.call-up .left {
+
+  display: grid;
+
+  height: 100%;
+  width: 50%;
+}
+
+
+.call-up .left a:hover{
+  transition: 0.3s;
+  color: #19B7BB;
+}
+
+.call-up .rigth{
+
+
+  margin-left: 30px;
+
+  height: 100%;
+  width: 50%;
+}
+
+.call-up .rigth .text-us{
+  transition: 0.3s;
+  color: black;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+  width: 244px;
+  height: 48px;
+  background: #FFFFFF;
+  border: 1px solid #EAEAF3;
+  box-sizing: border-box;
+  box-shadow: 0px 8px 16px rgba(116, 115, 115, 0.15);
+  border-radius: 12px;
+}
+
+.call-up .rigth .text-us:hover{
+  background: linear-gradient(267.71deg, white 0%, white 100%);
+box-shadow: 0px 8px 16px rgba(25, 183, 187, 0.32);
+}
+
+.call-up .rigth .text-us:active{
+  background: linear-gradient(267.71deg, white 0%, white 100%);
+  box-shadow: 0px 8px 16px rgba(25, 183, 187, 0.32), inset 0px 0px 16px rgba(0, 0, 0, 0.15);
+}
+
+
+.call-down{
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  display: grid;
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 24px;
+  padding: 32px;
+  max-width: 1100px;
+  height: 183px;
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: 0px 0px 24px rgba(126, 120, 120, 0.1);
+  -webkit-backdrop-filter: blur(150px);
+          backdrop-filter: blur(150px);
+  border-radius: 24px;
+}
+
+
+.call-down .up{
+  font-weight: 800;
+  font-size: 20px;
+  grid-column: 1/3;
+
+}
+
+.call-down .threethings{
+  grid-gap: 15px;
+  text-align: center;
+  justify-content: center;
+  grid-column: 1/3;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+}
+
+ .call-down input{
+   height: 50px;
+   color: #BCBCC7;
+   padding-left: 40px;
+   font-size: 18px;
+   background: #FFFFFF;
+   border: 1px solid #EAEAF3;
+   box-sizing: border-box;
+   border-radius: 12px;
+ }
 
 
 
+ .call-down input:active, input:hover, {
+   color: black;
+ }
+
+.call-down .left-text{
+  max-width: 250px;
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 16px;
+  color: #858C99;
+
+}
+
+.call-down .btn {
+  transition: 0.3s;
+  cursor: pointer;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 158px;
+  height: 56px;
+  margin-left: -100px;
+  background: linear-gradient(267.71deg, #1ACACE 0%, #19B7BB 100%);
+  border-radius: 12px;
+}
+
+.call-down .btn:hover{
+  background: linear-gradient(267.71deg, #1ACACE 0%, #19B7BB 100%);
+box-shadow: 0px 8px 16px rgba(25, 183, 187, 0.32);
+}
+
+.call-down .btn:active{
+  background: linear-gradient(267.71deg, #1ACACE 0%, #19B7BB 100%);
+  box-shadow: 0px 8px 16px rgba(25, 183, 187, 0.32), inset 0px 0px 16px rgba(0, 0, 0, 0.15);
+}
 
 
 
-
-
-
-
-
-
-
-
-
+iframe{
+  grid-column: 2;
+  grid-row: 1/3;
+  height: 100%;
+  width: 100%;
+  border-radius: 24px;
+}
 
 
 
@@ -839,12 +1020,21 @@ border-radius: 4px;
 }
 
 @media (max-width: 1200px){
+  .call-us{margin-bottom: 80px;}
+  .call-down{margin-top: -250px;}
+   iframe {grid-column: 1; grid-row: 3;  height: 210%; margin-top: -250px; }
+  .call-us {height: 1200px;}
   .kek-li1 li{    padding: 0px 7px;  }
   .kek-li1 li a{    font-size: 15px;  }
   .ppltalk{    height: 200px;  }
 }
 
 @media (max-width: 880px){
+
+  .call-us{margin-bottom: 180px;}
+  .call-down{ height: 480px; grid-template-columns: repeat(1, 1fr); margin-top: -120px;}
+   iframe{margin-top: -120px; height: 280%;}
+  .call-down .threethings { grid-template-rows: repeat(3, 1fr); grid-template-columns: repeat(1, 1fr);}
   .footer{padding-bottom: 7px;}
   .menu-m{display:grid;}
   .menu-hidden{ display: none;}
@@ -866,6 +1056,11 @@ border-radius: 4px;
 }
 
 @media(max-width: 750px){
+.call-down{margin-top:0;}
+.call-us {height: 1500px;}
+.call-up .left{margin-left: 0; width: 100%; height:220px;}
+.call-up .rigth{margin-left: 0; width: 100%; height: 240px;}
+.call-up {display: block; height: auto;}
 .ppltalk {display: none;}
 .blue-button {width:153px;}
 .white-button { display: flex; margin-left: 0; font-size: 17px; width: 153px; padding: 8px 16px;}
@@ -873,8 +1068,9 @@ border-radius: 4px;
 .boton{  margin-top: 0px; }
 }
 
-@media(max-width: 450px){
-
-
+@media(max-width: 530px){
+.call-down .left-text {max-width: 100%;}
+.textus{  font-size:40px;}
+.call-down .btn {position: absolute; margin: 440px 70px;}
 
 }

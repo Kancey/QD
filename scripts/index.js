@@ -6,6 +6,7 @@ let roundm1 = document.querySelector('.joj1');
 let burgerm = document.querySelector('.burger-m');
 let burmenu = document.querySelector('.menu-m');
 let closem = document.querySelector('.up-thing');
+let body = document.querySelector('body');
 
 
 
@@ -25,6 +26,7 @@ burgerm.addEventListener('click' , function(){
   burgerm.classList.toggle('active');
   burmenu.classList.toggle('active');
   burmenu1.classList.toggle ('active');
+  body.classList.toggle ('lock');
 })
 
 closem.addEventListener('click' , function(){
