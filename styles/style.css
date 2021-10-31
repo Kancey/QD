@@ -60,6 +60,149 @@ body.lock{
     border-radius: 32px;
   }
 
+
+.change-lng{
+  margin-left: 6px;
+  margin-top: 8px;
+  height: 25px;
+  width: 25px;
+  background: #EAEAF3;
+  border-radius: 50%;
+}
+
+.change-lng.active{
+  margin-left: 6px;
+  margin-top: 8px;
+  height: 25px;
+  width: 25px;
+  background: #19B7BB;
+  border-radius: 50%;
+}
+
+.change-lng-span {
+  transition: 0.3s;
+  margin-left: 3px;
+  transform: rotate(45deg);
+  margin-top: 12px;
+  border-radius: 45px;
+  content: '';
+  display: block;
+  transition: 0.3s;
+  height: 2px;
+  width: 12px;
+  background-color: #BCBCC7;
+}
+
+.change-lng-span1 {
+  transition: 0.3s;
+  margin-left: 10px;
+  transform: rotate(-45deg);
+  margin-top: -2px;
+  border-radius: 45px;
+  content: '';
+  display: block;
+  transition: 0.3s;
+  height: 2px;
+  width: 12px;
+  background-color: #BCBCC7;
+}
+
+
+.change-lng-span.active {
+  transition: 0.3s;
+  margin-left: 3px;
+  transform: rotate(-45deg);
+  margin-top: 12px;
+  border-radius: 45px;
+  content: '';
+  display: block;
+  transition: 0.3s;
+  height: 2px;
+  width: 12px;
+  background-color: white;
+}
+
+.change-lng-span1.active {
+  transition: 0.3s;
+  margin-left: 10px;
+  transform: rotate(45deg);
+  margin-top: -2px;
+  border-radius: 45px;
+  content: '';
+  display: block;
+  transition: 0.3s;
+  height: 2px;
+  width: 12px;
+  background-color: white;
+}
+
+.open-lng{
+  opacity: 0;
+  padding: 10px;
+  margin-top: 50px;
+  position: absolute;
+  width: 102px;
+  height: 54px;
+  background: #FFFFFF;
+  box-shadow: 0px 8px 16px rgba(116, 115, 115, 0.35);
+  border-radius: 20px;
+}
+
+.open-lng.active{
+  opacity:1;
+  padding: 10px;
+  margin-top: 50px;
+  position: absolute;
+  width: 102px;
+  height: 54px;
+  background: #FFFFFF;
+  box-shadow: 0px 8px 16px rgba(116, 115, 115, 0.35);
+  border-radius: 20px;
+}
+
+.open1{
+  transition: 0.3s;
+
+}
+
+.open1:hover{
+  border-radius: 20px;
+  background-color: rgba(234, 234, 243, .3);
+
+}
+
+
+
+.done1{
+  transition: 0.3s;
+  opacity: 0;
+}
+
+.done1.active{
+  opacity: 1;
+}
+
+
+
+.open2{
+  transition: 0.3s;
+  margin-top: 8px;
+}
+
+.open2:hover{
+  border-radius: 20px;
+  background-color: rgba(234, 234, 243, .3);
+  margin-top: 8px;
+}
+
+.done2{
+  transition: 0.3s;
+  opacity: 0;
+}
+
+.done2.active{
+  opacity: 1;
+}
   .language {
     margin-left: 16px;
     width: 122px;
@@ -297,15 +440,15 @@ color: #26323E;
            }
 
 
-           .burger.active{top: 6px; background-color: rgba(255, 255, 255, 0);}
+           .burger.active{ z-index: 101; top: 6px; background-color: rgba(255, 255, 255, 0);}
 
-           .burger.active span{height: 0;}
-           .burger.active span::before{
+           .burger.active span{ z-index: 101; height: 0;}
+           .burger.active span::before{ z-index: 101;
              background-color: #1ACACE;
              transform: rotate(-45deg);
            }
 
-           .burger.active span::after{
+           .burger.active span::after{ z-index: 101;
              background-color: #1ACACE;
              transform: rotate(45deg);
            }
@@ -601,6 +744,7 @@ box-shadow: 0px 8px 16px rgba(116, 115, 115, 0.25);
 
 
 .menu-hidden.active {
+  z-index: 100;
   top: 30px;
   height: auto;
   position: absolute;
@@ -797,9 +941,9 @@ border-radius: 4px;
 }
 
 
-/*-----------------------------*/
-/*  Это страница с контактами  */
-/*-----------------------------*/
+/*---------------------------------------------------------------------------------------------------------------------------------------------*/
+/*                                                                  Это страница с контактами                                                  */
+/*---------------------------------------------------------------------------------------------------------------------------------------------*/
 
 
 .textus{
@@ -990,6 +1134,120 @@ iframe{
 
 
 
+/*---------------------------------------------------------------------------------------------------------------------------------------------*/
+/*                                                                  Это страница с кейсами                                                     */
+/*---------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+.casesus{
+  color: black;
+ font-weight: 800;
+ font-size: 60px;
+ max-width: 1800px;
+ font-family: ubuntu;
+ height: auto;
+ display: block;
+ margin: 30px auto;
+}
+
+
+.cases-bar{
+  transition: all 0.5s ease 0s;
+  overflow: hidden;
+  grid-column-gap: 24px;
+  grid-template-columns: 1fr 1fr 1fr 1fr ;
+  grid-row-gap: 33px;
+  display: grid;
+  padding: 30px;
+  margin: 30px auto;
+  max-width: 1740px;
+  height: 300px;
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: 0px 0px 24px rgba(126, 120, 120, 0.1);
+  backdrop-filter: blur(150px);
+  border-radius: 24px;
+}
+
+.cases-bar.active{
+  transition: all 0.5s ease 0s;
+  overflow: hidden;
+  grid-column-gap: 24px;
+  grid-template-columns: 1fr 1fr 1fr 1fr ;
+  grid-row-gap: 33px;
+  display: grid;
+  padding: 30px;
+  margin: 30px auto;
+  max-width: 1740px;
+  height: 625px;
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: 0px 0px 24px rgba(126, 120, 120, 0.1);
+  backdrop-filter: blur(150px);
+  border-radius: 24px;
+}
+
+.rcases{
+  display: inline-grid;
+  background: #FFFFFF;
+  box-shadow: 0px 8px 32px rgba(103, 97, 97, 0.1);
+  border-radius: 12px;
+  padding: 24px;
+  height: 250px;
+  width: 367px;
+}
+
+.allcases{
+  left: 1400px;
+  z-index: 100;
+  cursor: pointer;
+  display: inline-grid;
+  background: #FFFFFF;
+  box-shadow: 0px 8px 32px rgba(103, 97, 97, 0.1);
+  border-radius: 12px;
+  height: 298px;
+  width: 415px;
+}
+
+.open-eyes{
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+
+
+
+.partus{
+  letter-spacing:0.0001px;
+  color: black;
+  font-weight: 800;
+  font-size:48px;
+  max-width: 1800px;
+  font-family: ubuntu;
+  height: auto;
+  display: block;
+  margin: 30px auto;
+}
+
+
+.part-bar{
+  align-items: center;
+  overflow: hidden;
+  grid-gap: 50px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  display: grid;
+  padding: 30px;
+  margin: 30px auto;
+  max-width: 1740px;
+  height: auto;
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: 0px 0px 24px rgba(126, 120, 120, 0.1);
+  backdrop-filter: blur(150px);
+  border-radius: 24px;
+}
+
+
+
+
+
 
 
 @media (min-width: 1807px){
@@ -1030,7 +1288,10 @@ iframe{
 }
 
 @media (max-width: 880px){
-
+  .cases-bar.active{padding: 15px;}
+  .cases-bar{padding: 15px;}
+  .casesus{font-size: 44px;}
+  .partus{font-size: 30px;}
   .call-us{margin-bottom: 180px;}
   .call-down{ height: 480px; grid-template-columns: repeat(1, 1fr); margin-top: -120px;}
    iframe{margin-top: -120px; height: 280%;}
